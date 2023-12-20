@@ -1,0 +1,32 @@
+<!-- Write html and css script to design a login form having fields like username,password, submit and reset.
+While hovering each control it should be expanded around 20% horizontally with the delay of 2sec.
+The expansion should take place in 4sec. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #con{
+            width: 50px;
+        }
+        #con:hover{
+            width: 200px;
+            transition-delay: 2s;
+            transition-duration: 4s;
+        }
+    </style>
+</head>
+<body bgcolor="aliceblue">
+    <form>
+        <fieldset>
+            <legend align="center">FORMMMMMM</legend>
+            Username : <input type="text" name="username" id="con"> <br> <br>
+            Password : <input type="password" name="pwd" required id="con"> <br> <br>
+            <input type="submit" value="submit" id="con">
+            <input type="reset" value="reset" id="con">
+        </fieldset>
+    </form>
+</body>
+</html>

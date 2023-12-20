@@ -1,0 +1,45 @@
+<!-- 1)linear-gradient
+2)radial-gradient
+3)conic-gradient
+-> property : background-image -->
+
+<!-- Gradient is special type of image that is made up of progressive and smooth transition
+between two or more colors.  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #grad1 {
+            height: 300px;
+            width: 300px;
+            background: linear-gradient(to left,red,yellow,white,green); 
+            /* red 10%,yellow 20%,white 30%,green 60%
+            0 to 10% - red
+            10 to 20% - till 30% - yellow
+            30 to 30% - till 60%- white
+            rest */
+        }
+        #grad2 {
+            height: 300px;
+            width: 300px;
+            background: repeating-radial-gradient( cyan 30%,pink 40%,purple 40%);
+        }
+        #grad3 {
+            height: 300px;
+            width: 300px;
+            /* background: conic-gradient(red,blue,green,yellow);  */
+            background: conic-gradient(red 0deg,red 70deg,yellow 90deg,yellow 160deg,green 180deg,green 250deg,
+            blue 270deg,blue 340deg,red 360deg);
+            border-radius: 50%; 
+        }
+    </style>
+</head>
+<body>
+    <div  id="grad1">  </div> <br>
+    <div id="grad2">  </div> <br>
+    <div id="grad3"> </div>
+</body>
+</html>
